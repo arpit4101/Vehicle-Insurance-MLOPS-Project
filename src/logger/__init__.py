@@ -36,6 +36,10 @@ def configure_logger():
     console_handler.setFormatter(formatter)
     console_handler.setLevel(logging.INFO)
     
+    # Clear existing handlers to avoid duplicate logs
+    if logger.hasHandlers():
+        logger.handlers.clear()
+        
     # Add handlers to the logger
     logger.addHandler(file_handler)
     logger.addHandler(console_handler)
