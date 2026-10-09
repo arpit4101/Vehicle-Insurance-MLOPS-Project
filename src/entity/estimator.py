@@ -4,8 +4,8 @@ import pandas as pd
 from pandas import DataFrame
 from sklearn.pipeline import Pipeline
 
-from exception import MyException
-from logger import logging
+from src.exception import MyException
+from src.logger import logging
 class TargetValueMapping:
     def __init__(self):
         self.yes:int = 0

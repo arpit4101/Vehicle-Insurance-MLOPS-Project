@@ -6,12 +6,12 @@ import pandas as pd
 
 from pandas import DataFrame
 
-from exception import MyException
-from logger import logging
-from utils.main_utils import read_yaml_file
-from entity.artifact_entity import DataIngestionArtifact, DataValidationArtifact
-from entity.config_entity import DataValidationConfig
-from constants import SCHEMA_FILE_PATH
+from src.exception import MyException
+from src.logger import logging
+from src.utils.main_utils import read_yaml_file
+from src.entity.artifact_entity import DataIngestionArtifact, DataValidationArtifact
+from src.entity.config_entity import DataValidationConfig
+from src.constants import SCHEMA_FILE_PATH
 
 
 class DataValidation:

@@ -6,12 +6,12 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from sklearn.compose import ColumnTransformer
 
-from constants import TARGET_COLUMN, SCHEMA_FILE_PATH, CURRENT_YEAR
-from entity.config_entity import DataTransformationConfig
-from entity.artifact_entity import DataTransformationArtifact, DataIngestionArtifact, DataValidationArtifact
-from exception import MyException
-from logger import logging
-from utils.main_utils import save_object, save_numpy_array_data, read_yaml_file
+from src.constants import TARGET_COLUMN, SCHEMA_FILE_PATH, CURRENT_YEAR
+from src.entity.config_entity import DataTransformationConfig
+from src.entity.artifact_entity import DataTransformationArtifact, DataIngestionArtifact, DataValidationArtifact
+from src.exception import MyException
+from src.logger import logging
+from src.utils.main_utils import save_object, save_numpy_array_data, read_yaml_file
 
 
 class DataTransformation:

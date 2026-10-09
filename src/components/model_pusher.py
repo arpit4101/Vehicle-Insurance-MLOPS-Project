@@ -1,11 +1,11 @@
 import sys
 
-from cloud_storage.aws_storage import SimpleStorageService
-from exception import MyException
-from logger import logging
-from entity.artifact_entity import ModelPusherArtifact, ModelEvaluationArtifact
-from entity.config_entity import ModelPusherConfig
-from entity.s3_estimator import Proj1Estimator
+from src.cloud_storage.aws_storage import SimpleStorageService
+from src.exception import MyException
+from src.logger import logging
+from src.entity.artifact_entity import ModelPusherArtifact, ModelEvaluationArtifact
+from src.entity.config_entity import ModelPusherConfig
+from src.entity.s3_estimator import Proj1Estimator
 
 
 class ModelPusher:

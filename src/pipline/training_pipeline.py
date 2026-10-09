@@ -1,22 +1,22 @@
 import sys
-from exception import MyException
-from logger import logging
+from src.exception import MyException
+from src.logger import logging
 
-from components.data_ingestion import DataIngestion
-from components.data_validation import DataValidation
-from components.data_transformation import DataTransformation
-from components.model_trainer import ModelTrainer
-from components.model_evaluation import ModelEvaluation
-from components.model_pusher import ModelPusher
+from src.components.data_ingestion import DataIngestion
+from src.components.data_validation import DataValidation
+from src.components.data_transformation import DataTransformation
+from src.components.model_trainer import ModelTrainer
+from src.components.model_evaluation import ModelEvaluation
+from src.components.model_pusher import ModelPusher
 
-from entity.config_entity import (DataIngestionConfig,
+from src.entity.config_entity import (DataIngestionConfig,
                                           DataValidationConfig,
                                           DataTransformationConfig,
                                           ModelTrainerConfig,
                                           ModelEvaluationConfig,
                                           ModelPusherConfig)
                                           
-from entity.artifact_entity import (DataIngestionArtifact,
+from src.entity.artifact_entity import (DataIngestionArtifact,
                                             DataValidationArtifact,
                                             DataTransformationArtifact,
                                             ModelTrainerArtifact,

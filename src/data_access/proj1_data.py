@@ -3,9 +3,9 @@ import pandas as pd
 import numpy as np
 from typing import Optional
 
-from configuration.mongo_db_connection import MongoDBClient
-from constants import DATABASE_NAME
-from exception import MyException
+from src.configuration.mongo_db_connection import MongoDBClient
+from src.constants import DATABASE_NAME
+from src.exception import MyException
 
 class Proj1Data:
     """

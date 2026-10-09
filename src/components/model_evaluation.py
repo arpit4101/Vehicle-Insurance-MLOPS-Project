@@ -1,14 +1,14 @@
-from entity.config_entity import ModelEvaluationConfig
-from entity.artifact_entity import ModelTrainerArtifact, DataIngestionArtifact, ModelEvaluationArtifact
+from src.entity.config_entity import ModelEvaluationConfig
+from src.entity.artifact_entity import ModelTrainerArtifact, DataIngestionArtifact, ModelEvaluationArtifact
 from sklearn.metrics import f1_score
-from exception import MyException
-from constants import TARGET_COLUMN
-from logger import logging
-from utils.main_utils import load_object
+from src.exception import MyException
+from src.constants import TARGET_COLUMN
+from src.logger import logging
+from src.utils.main_utils import load_object
 import sys
 import pandas as pd
 from typing import Optional
-from entity.s3_estimator import Proj1Estimator
+from src.entity.s3_estimator import Proj1Estimator
 from dataclasses import dataclass
 
 @dataclass
