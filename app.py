@@ -9,8 +9,11 @@ from uvicorn import run as app_run
 from typing import Optional
 
 # Importing constants and pipeline modules from the project
+# pyrefly: ignore [missing-import]
 from src.constants import APP_HOST, APP_PORT
+# pyrefly: ignore [missing-import]
 from src.pipline.prediction_pipeline import VehicleData, VehicleDataClassifier
+# pyrefly: ignore [missing-import]
 from src.pipline.training_pipeline import TrainPipeline
 
 # Initialize FastAPI application

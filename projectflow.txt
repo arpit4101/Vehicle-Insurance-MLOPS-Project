@@ -119,6 +119,7 @@
       sudo sh get-docker.sh
       sudo usermod -aG docker ubuntu
       newgrp docker
+      docker ps (To check if docker is installed or not)
 
 29. Next step is to connect Github with EC2(Self hosted runner):
       * select your project on Github >> go to settings >> Actions >> Runner >> New self hosted runner
